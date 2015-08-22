@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 1cbc66aeca4c66549b04cc9571cadead
+timeCreated: 1440267727
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: head
+    21300002: videocam
+    21300004: leg
+    21300006: torso
+    21300008: arm
+    21300010: knee
+    21300012: elbow
+    21300014: boot
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: head
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 102
+        height: 138
+      alignment: 9
+      pivot: {x: .488314986, y: .137255684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: videocam
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 372
+        width: 239
+        height: 130
+      alignment: 9
+      pivot: {x: .260627717, y: .344139457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: leg
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 326
+        width: 100
+        height: 173
+      alignment: 9
+      pivot: {x: .511918664, y: .823804021}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: torso
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 246
+        height: 351
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arm
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 174
+        width: 78
+        height: 175
+      alignment: 9
+      pivot: {x: .500000417, y: .820103586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: knee
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 127
+        width: 88
+        height: 184
+      alignment: 9
+      pivot: {x: .527088165, y: .836834133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: elbow
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 5
+        width: 65
+        height: 150
+      alignment: 9
+      pivot: {x: .536672711, y: .841670811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boot
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 10
+        width: 127
+        height: 74
+      alignment: 9
+      pivot: {x: .246609181, y: .677170277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
