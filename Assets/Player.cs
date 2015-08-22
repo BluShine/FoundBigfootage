@@ -36,6 +36,6 @@ public class Player : MonoBehaviour {
             speed * Time.deltaTime * moveDir.y, 0);
 
         //BIGFOOT BLURRINESS-------------------------------------------------------
-
+        
 	}
 }

@@ -96,7 +96,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 473676, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.49000001
+      value: -15.1400003
       objectReference: {fileID: 0}
     - target: {fileID: 473676, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
       propertyPath: m_LocalPosition.y
@@ -137,6 +137,18 @@ Prefab:
     - target: {fileID: 470188, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9533396, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5c1cebc191b0e2e4f9620ac5f9fddb92, type: 2}
+    - target: {fileID: 9533396, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9533396, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
@@ -425,6 +437,22 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
   m_StereoMirrorMode: 0
+--- !u!1 &1554846044 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 176560, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
+  m_PrefabInternal: {fileID: 8854100}
+--- !u!114 &1554846046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1554846044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8129adce1cb0a4891e8980b8334385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!4 &1749480143 stripped
 Transform:
   m_PrefabParentObject: {fileID: 473092, guid: 0123ede828e01944fa111b9d55cf11a3, type: 2}
