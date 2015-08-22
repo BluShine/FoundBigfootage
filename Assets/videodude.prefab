@@ -169,6 +169,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473676}
   - 95: {fileID: 9533396}
+  - 114: {fileID: 11401270}
   m_Layer: 0
   m_Name: videodude
   m_TagString: Untagged
@@ -257,7 +258,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .429999828, y: -1.16999996, z: 0}
+  m_LocalPosition: {x: .429999828, y: -1.16999996, z: .100000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 462894}
@@ -332,7 +333,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.727535725, y: 1.05492067, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: .754330575, y: .754330516, z: .754330516}
   m_Children:
   - {fileID: 470288}
@@ -374,7 +375,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.11753559, y: -1.7749207, z: -10}
+  m_LocalPosition: {x: -15.1400003, y: -.939999998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 470188}
@@ -412,7 +413,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176560}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 5c1cebc191b0e2e4f9620ac5f9fddb92, type: 2}
   m_CullingMode: 0
@@ -422,6 +423,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11401270
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8129adce1cb0a4891e8980b8334385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!212 &21212470
 SpriteRenderer:
   m_ObjectHideFlags: 1

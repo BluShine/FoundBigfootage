@@ -5,9 +5,11 @@ public class VideoDude : MonoBehaviour {
 
     public float speed = 5;
     Player player;
+    Animator anim;
 
 	// Use this for initialization
 	void Start () {
+        anim = GetComponent<Animator>();
         player = FindObjectOfType<Player>();
 	}
 	
@@ -25,5 +27,7 @@ public class VideoDude : MonoBehaviour {
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
+
+        anim.speed = speed / 2;
 	}
 }
