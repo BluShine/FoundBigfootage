@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: cc856d0d8ce14084294dbc83f74f9b55
-timeCreated: 1440244977
+timeCreated: 1440246396
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: bigfoot_knee
+    21300002: bigfoot_leg
+    21300004: bigfoot_head
+    21300006: bigfoot_hand
+    21300008: bigfoot_foot
+    21300010: bigfoot_elbow
+    21300012: bigfoot_arm
+    21300014: bigfoot_body
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +38,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +56,87 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: bigfoot_knee
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 276
+        width: 89
+        height: 220
+      alignment: 9
+      pivot: {x: .458800018, y: .807938993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigfoot_leg
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 272
+        width: 120
+        height: 232
+      alignment: 9
+      pivot: {x: .471260071, y: .777488708}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigfoot_head
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 372
+        width: 108
+        height: 136
+      alignment: 9
+      pivot: {x: .404200226, y: .111166336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigfoot_hand
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 459
+        width: 102
+        height: 42
+      alignment: 9
+      pivot: {x: .838116229, y: .609485447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigfoot_foot
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 390
+        width: 131
+        height: 45
+      alignment: 9
+      pivot: {x: .149066016, y: .929438591}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigfoot_elbow
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 74
+        width: 59
+        height: 187
+      alignment: 9
+      pivot: {x: .480515301, y: .881149352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigfoot_arm
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 30
+        width: 87
+        height: 238
+      alignment: 9
+      pivot: {x: .671778738, y: .867097795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigfoot_body
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 4
+        width: 182
+        height: 363
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
