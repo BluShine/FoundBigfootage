@@ -5,6 +5,8 @@ public class VideoScore : MonoBehaviour {
 
     public TextMesh multiplier;
     public TextMesh qualityName;
+    public GameObject filmBar;
+    Vector3 filmBarSize;
 
     static string[] QNAMES = {"GREAT", "GOOD", "DECENT", "AVERAGE", "NOT GREAT", 
                                  "MEDIOCRE", "POOR", "BAD", "TRASH", "GARBAGE", 
@@ -13,7 +15,7 @@ public class VideoScore : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	    
+        filmBarSize = filmBar.transform.localScale;
 	}
 	
 	// Update is called once per frame
@@ -32,5 +34,10 @@ public class VideoScore : MonoBehaviour {
         {
             qualityName.text = QNAMES[QNAMES.Length - 1];
         }
+    }
+
+    public void SetFilm(float f)
+    {
+        filmBar.transform.localScale = new Vector3(filmBarSize.x * f, filmBarSize.y, filmBarSize.z);
     }
 }
