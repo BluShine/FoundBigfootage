@@ -18,6 +18,7 @@ public class Player : MonoBehaviour {
 
     static int LOWESTBLUR = 2;
     static int HIGHESTBLUR = 10;
+    static float DEATHDIST = 13;
 
 	// Use this for initialization
 	void Start () {
@@ -50,6 +51,7 @@ public class Player : MonoBehaviour {
 
         //BIGFOOT BLURRINESS-------------------------------------------------------
         int lowestScore = HIGHESTBLUR;
+        float lowestDist = float.PositiveInfinity;
         float filmed = 0;
         foreach(GameObject g in videoEnemies){
             if (g.activeSelf)
@@ -60,6 +62,9 @@ public class Player : MonoBehaviour {
                     if(d.score < lowestScore)
                         lowestScore = d.score;
 
+                    float nDist = Vector2.Distance(d.transform.position, transform.position);
+                    lowestDist = Mathf.Min(nDist, lowestDist);
+
                     if (d.filming)
                     {
                         filmed = 1;
@@ -67,8 +72,8 @@ public class Player : MonoBehaviour {
                 }
             }
         }
-        if (lowestScore == 0 && filmed == 1)
-            lose();
+        if (lowestDist <= DEATHDIST)
+            lose(); 
         music.setSpotted(filmed);
         lowestScore = Mathf.Max(LOWESTBLUR, lowestScore);
         blur.iterations = Mathf.Max(LOWESTBLUR, lowestScore);
