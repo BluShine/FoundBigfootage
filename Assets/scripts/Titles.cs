@@ -12,7 +12,9 @@ public class Titles : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        MusicPlayer m = FindObjectOfType<MusicPlayer>();
+        m.setSpotted(0);
+        m.setVolume(0);
 	}
 	
 	// Update is called once per frame
