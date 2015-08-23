@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraScoreDisplayer : MonoBehaviour {
+public class VideoScore : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

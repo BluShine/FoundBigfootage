@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: FontInk
-  m_Shader: {fileID: 4800000, guid: 1c5ca41517133f94392e83fdb3131025, type: 3}
+  m_Shader: {fileID: 4800000, guid: c3f6d7a1110268941a31167107343891, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -143,8 +143,12 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 1, g: 1, b: 1, a: .391000003}
       data:
         first:
           name: _TintColor
-        second: {r: 1, g: 0, b: 0, a: .0392156877}
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Overlay
+        second: {r: 1, g: 1, b: 1, a: 1}
