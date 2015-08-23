@@ -16,7 +16,7 @@ public class VideoDude : MonoBehaviour {
     GameObject[] camDots;
     bool filming = false;
     float filmLeft = 1;
-    float runTime = 3;
+    float runTime = 1;
     [HideInInspector]
     public int score;
 
@@ -65,7 +65,7 @@ public class VideoDude : MonoBehaviour {
             //run away when we're done!
             Vector3 dir = -player.transform.position + transform.position;
             dir.Normalize();
-            transform.position += dir * Time.deltaTime * speed * 8;
+            transform.position += dir * Time.deltaTime * speed * 12;
 
             if (dir.x > 0)
             {
@@ -76,7 +76,7 @@ public class VideoDude : MonoBehaviour {
                 body.transform.localScale = new Vector3(-1, 1, 1);
             }
 
-            anim.speed = speed * 4;
+            anim.speed = speed * 6;
 
             runTime -= Time.fixedDeltaTime;
             if (runTime <= 0)
