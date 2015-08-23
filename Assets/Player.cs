@@ -10,7 +10,9 @@ public class Player : MonoBehaviour {
     Animator anim;
     Rigidbody2D body;
     public Blur blur;
-
+    public GameObject winText;
+    public GameObject loseText;
+    [HideInInspector]
     public List<GameObject> videoEnemies;
 
     static int LOWESTBLUR = 2;
@@ -57,18 +59,19 @@ public class Player : MonoBehaviour {
                 }
             }
         }
-
+        if (lowestScore == 1)
+            lose();
         lowestScore = Mathf.Max(LOWESTBLUR, lowestScore);
         blur.iterations = lowestScore;
 	}
 
     public void lose()
     {
-
+        loseText.SetActive(true);
     }
 
     public void win()
     {
-
+        winText.SetActive(true);
     }
 }

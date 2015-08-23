@@ -24,5 +24,9 @@ public class CamerasLeft : MonoBehaviour {
             }
         }
         text.text = camerasLeft + " cameras remaining";
+        if (camerasLeft == 0)
+        {
+            player.win();
+        }
 	}
 }
