@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="filmmeter.svg"
+   inkscape:export-filename="C:\Users\Mark\Documents\GitHub\FoundBigfootage\Assets\UI\filmmeter.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.919596"
+     inkscape:cx="46.473659"
+     inkscape:cy="63.559512"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:bbox-paths="false"
+     inkscape:object-paths="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:bbox-nodes="false"
+     inkscape:object-nodes="true"
+     inkscape:snap-global="false"
+     inkscape:window-width="868"
+     inkscape:window-height="878"
+     inkscape:window-x="25"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-796.36218)">
+    <rect
+       style="fill:#ff1717;fill-opacity:1;stroke:none"
+       id="rect3845"
+       width="144.07298"
+       height="38.764584"
+       x="100.38391"
+       y="904.44238"
+       rx="0"
+       ry="0" />
+    <rect
+       style="fill:#363636;fill-opacity:1;stroke:none;stroke-width:0.99655919999999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.34705881999999999;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2985"
+       width="80.534416"
+       height="44.168922"
+       x="7.4625001"
+       y="952.74854"
+       ry="0"
+       rx="0" />
+    <rect
+       style="fill:#c6c6c6;fill-opacity:1;stroke:none"
+       id="rect3759"
+       width="36.252308"
+       height="19.167818"
+       x="29.603554"
+       y="965.24908"
+       ry="2.5" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3769"
+       style="font-size:7px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Comic Sans MS Bold"
+       transform="matrix(1.0542072,0,0,1.0542072,-4.0524328,786.15361)"><flowRegion
+         id="flowRegion3771"><rect
+           id="rect3773"
+           width="34.464287"
+           height="18.214285"
+           x="31.428572"
+           y="170.82143"
+           style="font-size:7px;font-weight:bold;text-align:center;text-anchor:middle;-inkscape-font-specification:Comic Sans MS Bold" /></flowRegion><flowPara
+         id="flowPara3775"
+         style="font-size:7px;font-weight:bold;text-align:center;text-anchor:middle;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS Bold">BIGFOOT</flowPara><flowPara
+         id="flowPara3777"
+         style="font-size:7px;font-weight:bold;text-align:center;text-anchor:middle;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS Bold">VIDEOS</flowPara></flowRoot>    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 72.073129,168.875 0,19.1875 9.645621,0 c 1.659981,-2.816 2.625,-6.08833 2.625,-9.59375 0,-3.50542 -0.965019,-6.77775 -2.625,-9.59375 z"
+       transform="translate(0,796.36218)"
+       id="path3789"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccscc" />
+    <path
+       id="path3798"
+       d="m 23.386287,965.2374 0,19.1875 -9.645621,0 c -1.659981,-2.816 -2.625,-6.08833 -2.625,-9.59375 0,-3.50542 0.965019,-6.77775 2.625,-9.59375 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccscc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="M 106.03125 156.375 C 100.88696 156.375 96.75 160.54321 96.75 165.6875 L 96.75 191.28125 C 96.75 196.42554 100.88696 200.5625 106.03125 200.5625 L 238.5625 200.5625 C 243.70679 200.5625 247.875 196.42554 247.875 191.28125 L 247.875 165.6875 C 247.875 160.54321 243.70679 156.375 238.5625 156.375 L 106.03125 156.375 z M 235.0625 160.09375 C 237.80208 159.99392 240.39545 160.30392 242.46875 162.0625 C 245.92959 167.54268 242.82116 174.8936 243.875 181 C 243.18656 185.76109 246.28325 194.33497 240 196.34375 C 199.73002 196.78565 159.34496 196.40297 119.03125 196.53125 C 113.5849 195.32932 105.6283 199.14916 101.625 194.1875 C 99.118853 187.95479 101.65514 180.3204 100.75 173.65625 C 100.65723 169.30892 99.180936 161.28373 105.40625 160.40625 C 145.12053 160.33325 184.84451 160.396 224.5625 160.375 C 227.77597 161.03361 231.54018 160.2221 235.0625 160.09375 z "
+       transform="translate(0,796.36218)"
+       id="rect3802-1" />
+  </g>
+</svg>
