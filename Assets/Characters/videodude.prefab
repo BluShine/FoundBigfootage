@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  spotThreashold: 3
+  spotThreashold: 2
   filmSeconds: 10
   videoScore: {fileID: 11401170}
   raycastMask:
@@ -1280,7 +1280,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: spotThreashold
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

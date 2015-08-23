@@ -67,7 +67,7 @@ public class Player : MonoBehaviour {
                 }
             }
         }
-        if (lowestScore == 1)
+        if (lowestScore == 0)
             lose();
         music.setSpotted(filmed);
         lowestScore = Mathf.Max(LOWESTBLUR, lowestScore);
