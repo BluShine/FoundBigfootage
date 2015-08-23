@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
     public GameObject model;
     Animator anim;
     Rigidbody2D body;
+    MusicPlayer music;
     public Blur blur;
     public GameObject winText;
     public GameObject loseText;
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour {
 	void Start () {
         anim = model.GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
+        music = FindObjectOfType<MusicPlayer>();
         foreach(GameObject g in GameObject.FindGameObjectsWithTag("VideoEnemy")) {
             videoEnemies.Add(g);
         }
@@ -48,6 +50,7 @@ public class Player : MonoBehaviour {
 
         //BIGFOOT BLURRINESS-------------------------------------------------------
         int lowestScore = HIGHESTBLUR;
+        float filmed = 0;
         foreach(GameObject g in videoEnemies){
             if (g.activeSelf)
             {
@@ -56,13 +59,23 @@ public class Player : MonoBehaviour {
                 {
                     if(d.score < lowestScore)
                         lowestScore = d.score;
+
+                    if (d.filming)
+                    {
+                        filmed = 1;
+                    }
                 }
             }
         }
         if (lowestScore == 1)
             lose();
+        music.setSpotted(filmed);
         lowestScore = Mathf.Max(LOWESTBLUR, lowestScore);
-        blur.iterations = lowestScore;
+        blur.iterations = Mathf.Max(LOWESTBLUR, lowestScore);
+
+        //music volume
+        float volume = ((float) lowestScore - (float)LOWESTBLUR) / ((float)HIGHESTBLUR - (float)LOWESTBLUR);
+        music.setVolume(1 - volume);
 	}
 
     public void lose()

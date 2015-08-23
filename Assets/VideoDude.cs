@@ -14,7 +14,8 @@ public class VideoDude : MonoBehaviour {
     TotalScore totalScore;
     public GameObject camDotPrefab;
     GameObject[] camDots;
-    bool filming = false;
+    [HideInInspector]
+    public bool filming = false;
     float filmLeft = 1;
     float runTime = 1;
     [HideInInspector]
