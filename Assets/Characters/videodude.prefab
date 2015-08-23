@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  spotThreashold: 2
+  spotThreashold: 3
   filmSeconds: 10
   videoScore: {fileID: 11401170}
   raycastMask:
@@ -827,6 +827,8 @@ MonoBehaviour:
     m_Bits: 1536
   body: {fileID: 178192}
   camDotPrefab: {fileID: 111744, guid: 84ff52e5243c24d439abd20298d8f04a, type: 2}
+  filming: 0
+  score: 0
 --- !u!212 &21207784
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1275,7 +1277,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: spotThreashold
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168222}

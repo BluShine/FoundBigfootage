@@ -46,7 +46,7 @@ public class MusicPlayer : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void OnGUI () {
         //keep music synced
         for(int i = 1; i < musicLayers.Length; i++) {
             musicLayers[i].timeSamples = musicLayers[0].timeSamples;
