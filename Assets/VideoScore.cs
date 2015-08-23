@@ -7,7 +7,7 @@ public class VideoScore : MonoBehaviour {
     public TextMesh qualityName;
 
     static string[] QNAMES = {"GREAT", "GOOD", "DECENT", "AVERAGE", "NOT GREAT", 
-                                 "MEDIOCRE", "POOR", "BAD", "HORRIBLE", "GARBAGE", 
+                                 "MEDIOCRE", "POOR", "BAD", "TRASH", "GARBAGE", 
                                  "POTATO"};
     static float QINTERVAL = .2f;
 
