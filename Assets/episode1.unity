@@ -246,11 +246,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 473092, guid: 0123ede828e01944fa111b9d55cf11a3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -18.6700001
       objectReference: {fileID: 0}
     - target: {fileID: 473092, guid: 0123ede828e01944fa111b9d55cf11a3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -10.7399998
       objectReference: {fileID: 0}
     - target: {fileID: 473092, guid: 0123ede828e01944fa111b9d55cf11a3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -772,11 +772,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 447548, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.5
+      value: 2.5999999
       objectReference: {fileID: 0}
     - target: {fileID: 447548, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.4000001
+      value: .800000012
       objectReference: {fileID: 0}
     - target: {fileID: 447548, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1006,7 +1006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .0514705777, g: .00189229939, b: .00189229939, a: 1}
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0

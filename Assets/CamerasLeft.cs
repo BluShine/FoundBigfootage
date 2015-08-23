@@ -6,15 +6,23 @@ public class CamerasLeft : MonoBehaviour {
 
     Text text;
     public int camerasLeft = 0;
+    Player player;
 
 	// Use this for initialization
 	void Start () {
         text = GetComponent<Text>();
+        player = FindObjectOfType<Player>();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        camerasLeft = GameObject.FindGameObjectsWithTag("VideoEnemy").Length;
+        camerasLeft = 0;
+        foreach(GameObject g in player.videoEnemies) {
+            if (g.activeSelf)
+            {
+                camerasLeft++;
+            }
+        }
         text.text = camerasLeft + " cameras remaining";
 	}
 }

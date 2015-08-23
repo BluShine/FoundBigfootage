@@ -11,11 +11,14 @@ public class VideoDude : MonoBehaviour {
     public GameObject body;
     Player player;
     Animator anim;
-    TotalScore score;
+    TotalScore totalScore;
     public GameObject camDotPrefab;
     GameObject[] camDots;
     bool filming = false;
     float filmLeft = 1;
+    float runTime = 3;
+    [HideInInspector]
+    public int score;
 
     static int MAXDOTS = 10;
     static float DISTANCESCORING = 10;
@@ -24,7 +27,7 @@ public class VideoDude : MonoBehaviour {
 	void Start () {
         anim = body.GetComponent<Animator>();
         player = FindObjectOfType<Player>();
-        score = FindObjectOfType<TotalScore>();
+        totalScore = FindObjectOfType<TotalScore>();
         filmLeft = filmSeconds;
         //go ahead and make some dots ahead of time.
         camDots = new GameObject[MAXDOTS];
@@ -74,6 +77,12 @@ public class VideoDude : MonoBehaviour {
             }
 
             anim.speed = speed * 4;
+
+            runTime -= Time.fixedDeltaTime;
+            if (runTime <= 0)
+            {
+                gameObject.SetActive(false);
+            }
         }
         else
         {
@@ -88,9 +97,9 @@ public class VideoDude : MonoBehaviour {
             player.transform.position - transform.position, 
             distance,
             raycastMask);
-        int scoreMulti = hits.Length + Mathf.FloorToInt(distance / DISTANCESCORING);
+        score = hits.Length + Mathf.FloorToInt(distance / DISTANCESCORING);
         //shoot footage
-        if (!filming && scoreMulti <= spotThreashold)
+        if (!filming && score <= spotThreashold)
         {
             filming = true;
             videoScore.gameObject.SetActive(true);
@@ -99,9 +108,9 @@ public class VideoDude : MonoBehaviour {
         {
             //score points
             filmLeft -= Time.fixedDeltaTime;
-            videoScore.SetScore(scoreMulti);
+            videoScore.SetScore(score);
             videoScore.SetFilm(filmLeft / filmSeconds);
-            score.score += scoreMulti * Time.fixedDeltaTime;
+            totalScore.score += score * Time.fixedDeltaTime;
             //place dots
             for (int i = 0; i < MAXDOTS; i++)
             {

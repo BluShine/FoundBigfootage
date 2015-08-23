@@ -14,8 +14,7 @@ public class Player : MonoBehaviour {
     public List<GameObject> videoEnemies;
 
     static int LOWESTBLUR = 2;
-    static float BLURINTERVAL = 5;
-    static float MAXDIST = 50;
+    static int HIGHESTBLUR = 10;
 
 	// Use this for initialization
 	void Start () {
@@ -46,16 +45,30 @@ public class Player : MonoBehaviour {
         body.velocity = new Vector3(speed * moveDir.x, speed * moveDir.y, 0);
 
         //BIGFOOT BLURRINESS-------------------------------------------------------
-        float closetDist = MAXDIST;
+        int lowestScore = HIGHESTBLUR;
         foreach(GameObject g in videoEnemies){
-            float d = Vector3.Distance(g.transform.position, transform.position);
-            if(d < closetDist) {
-                closetDist = d;
+            if (g.activeSelf)
+            {
+                VideoDude d = g.GetComponent<VideoDude>();
+                if (d != null)
+                {
+                    if(d.score < lowestScore)
+                        lowestScore = d.score;
+                }
             }
         }
 
-        int blurLevel = Mathf.FloorToInt(closetDist / BLURINTERVAL);
-        blurLevel = Mathf.Max(LOWESTBLUR, blurLevel);
-        blur.iterations = blurLevel;
+        lowestScore = Mathf.Max(LOWESTBLUR, lowestScore);
+        blur.iterations = lowestScore;
 	}
+
+    public void lose()
+    {
+
+    }
+
+    public void win()
+    {
+
+    }
 }
