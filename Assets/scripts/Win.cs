@@ -7,7 +7,9 @@ public class Win : MonoBehaviour {
     public string winLevel;
     public int targetScore = 500;
     static float plusRatio = 10;
-    static string[] grades = {"A", "B", "C", "D", "E"};
+    static string[] grades = {"A", "A-", "B+", "B", "B-", 
+                                 "C+", "C", "C-", "D+", "D", 
+                                 "D-", "E+", "E", "E-"};
     public Text gradeText;
     TotalScore score;
 
