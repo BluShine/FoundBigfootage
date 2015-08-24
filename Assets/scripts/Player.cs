@@ -56,7 +56,7 @@ public class Player : MonoBehaviour {
         foreach(GameObject g in videoEnemies){
             if (g.activeSelf)
             {
-                VideoDude d = g.GetComponent<VideoDude>();
+                VideoEnemy d = g.GetComponent<VideoEnemy>();
                 if (d != null)
                 {
                     if(d.score < lowestScore)

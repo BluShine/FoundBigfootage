@@ -12,6 +12,7 @@ public class Win : MonoBehaviour {
                                  "D-", "E+", "E", "E-"};
     public Text gradeText;
     TotalScore score;
+    bool submitted = false;
 
 	// Use this for initialization
 	void Start () {
@@ -37,8 +38,9 @@ public class Win : MonoBehaviour {
             }
             gradeText.text = "GRADE: " + g;
             Time.timeScale = 0;
-            if (Input.GetAxisRaw("Submit") != 0)
+            if (Input.GetAxisRaw("Submit") != 0 && !submitted)
             {
+                submitted = true;
                 MusicPlayer.Instance.finalScore += score.score;
                 MusicPlayer.Instance.letterGrades.Add(g);
                 Time.timeScale = 1;

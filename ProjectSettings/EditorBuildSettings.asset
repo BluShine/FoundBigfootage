@@ -12,6 +12,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/episode1.unity
   - enabled: 1
+    path: Assets/episode2.unity
+  - enabled: 1
     path: Assets/intro2.unity
   - enabled: 1
     path: Assets/episode3.unity
+  - enabled: 1
+    path: Assets/episode4.unity
+  - enabled: 1
+    path: Assets/episode5.unity
+  - enabled: 1
+    path: Assets/episode6.unity
+  - enabled: 1
+    path: Assets/episode7.unity
+  - enabled: 1
+    path: Assets/end.unity

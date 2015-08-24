@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class VideoDude : VideoEnemy {
+public class VideoDrone : VideoEnemy {
 
-    public float speed = 5;
+    public float speed = 7;
+    public float accel = 2;
     public int spotThreashold = 2;
     public float filmSeconds = 10;
     public VideoScore videoScore;
     public LayerMask raycastMask;
-    public GameObject body;
+    Rigidbody2D body;
     Player player;
-    Animator anim;
     TotalScore totalScore;
     public GameObject camDotPrefab;
     GameObject[] camDots;
@@ -20,9 +20,9 @@ public class VideoDude : VideoEnemy {
     static int MAXDOTS = 10;
     static float DISTANCESCORING = 10;
 
-	// Use this for initialization
-	void Start () {
-        anim = body.GetComponent<Animator>();
+    // Use this for initialization
+    void Start()
+    {
         player = FindObjectOfType<Player>();
         totalScore = FindObjectOfType<TotalScore>();
         filmLeft = filmSeconds;
@@ -34,46 +34,34 @@ public class VideoDude : VideoEnemy {
             camDots[i].SetActive(false);
         }
         videoScore.gameObject.SetActive(false);
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate() {
+        body = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
         //MOVEMENT------------------------------------------------------
         if (filming && filmLeft > 0)
         {
-            //walk towards bigfoot
+            //fly towards bigfoot
             Vector3 dir = player.transform.position - transform.position;
             dir.Normalize();
-            transform.position += dir * Time.deltaTime * speed;
-
-            if (dir.x > 0)
+            dir += new Vector3(Random.value * .02f, Random.value * .02f, 0);
+            Vector2 accelDir = accel * dir * Time.fixedDeltaTime;
+            body.velocity += accelDir;
+            if (body.velocity.magnitude > speed)
             {
-                body.transform.localScale = new Vector3(1, 1, 1);
+                body.velocity = body.velocity.normalized * speed;
             }
-            if (dir.x < 0)
-            {
-                body.transform.localScale = new Vector3(-1, 1, 1);
-            }
-
-            anim.speed = speed / 2;
         }
         else if (filmLeft <= 0)
         {
+            body.velocity = Vector2.zero;
+            body.isKinematic = true;
             //run away when we're done!
             Vector3 dir = -player.transform.position + transform.position;
             dir.Normalize();
-            transform.position += dir * Time.deltaTime * speed * 12;
-
-            if (dir.x > 0)
-            {
-                body.transform.localScale = new Vector3(1, 1, 1);
-            }
-            if (dir.x < 0)
-            {
-                body.transform.localScale = new Vector3(-1, 1, 1);
-            }
-
-            anim.speed = speed * 6;
+            transform.position += dir * Time.deltaTime * speed * 3;
 
             runTime -= Time.fixedDeltaTime;
             if (runTime <= 0)
@@ -83,15 +71,14 @@ public class VideoDude : VideoEnemy {
         }
         else
         {
-            //patrol or stand still
-            anim.speed = 0;
+            //do nothing
         }
 
         //FILMING------------------------------------------------------
         //calculate score
         float distance = Vector2.Distance(transform.position, player.transform.position);
         RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position,
-            player.transform.position - transform.position, 
+            player.transform.position - transform.position,
             distance,
             raycastMask);
         score = hits.Length + Mathf.FloorToInt(distance / DISTANCESCORING);
@@ -130,5 +117,5 @@ public class VideoDude : VideoEnemy {
                 videoScore.gameObject.SetActive(false);
             }
         }
-	}
+    }
 }
