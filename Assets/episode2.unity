@@ -1363,7 +1363,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Try staying in the bushes!
+  m_Text: Try approaching from another angle!
 --- !u!222 &891324510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1562,11 +1562,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 447548, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
       propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 11422454, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}
-      propertyPath: spotThreashold
-      value: 2
+      value: 28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef9a4e2125cc14d46b5a63b7f0ea0128, type: 2}

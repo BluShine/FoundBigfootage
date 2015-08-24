@@ -520,7 +520,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Run away on your tiny human feet!
+  m_Text: Look at them run with their tiny feet!
 --- !u!222 &200414897
 CanvasRenderer:
   m_ObjectHideFlags: 0
