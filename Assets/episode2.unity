@@ -807,7 +807,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'EPISODE 1: I Feel Like I''m Being Sasqwatched'
+  m_Text: 'EPISODE 2: More Like Sass-Quatch'
 --- !u!222 &504594002
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1381,7 +1381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b67c541e28149489802a854e6b0dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loseLevel: intro1
+  loseLevel: intro2
 --- !u!1 &975454274
 GameObject:
   m_ObjectHideFlags: 0

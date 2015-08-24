@@ -22,7 +22,7 @@ public class Win : MonoBehaviour {
     //OnGUI is called even if time is frozen
     void OnGUI()
     {
-        if (gameObject.activeSelf)
+        if (gameObject.activeSelf && !submitted)
         {
             string g = "A";
             if(score.score < targetScore) {
