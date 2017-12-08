@@ -1,32 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!29 &1
-SceneSettings:
+OcclusionCullingSettings:
   m_ObjectHideFlags: 0
-  m_PVSData: 
-  m_PVSObjectsArray: []
-  m_PVSPortalsArray: []
+  serializedVersion: 2
   m_OcclusionBakeSettings:
     smallestOccluder: 5
-    smallestHole: .25
+    smallestHole: 0.25
     backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 6
+  serializedVersion: 8
   m_Fog: 0
-  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: .00999999978
+  m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: .211999997, g: .226999998, b: .259000003, a: 1}
-  m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
-  m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
-  m_HaloStrength: .5
+  m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -37,15 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
---- !u!127 &3
-LevelGameManager:
-  m_ObjectHideFlags: 0
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 5
+  serializedVersion: 11
   m_GIWorkflowMode: 1
-  m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -56,36 +54,63 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 3
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
     m_TextureHeight: 1024
+    m_AO: 0
     m_AOMaxDistance: 1
-    m_Padding: 2
     m_CompAOExponent: 0
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
     m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
     m_TextureCompression: 1
     m_FinalGather: 0
+    m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 1024
-  m_LightmapSnapshot: {fileID: 0}
-  m_RuntimeCPUUsage: 25
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 0
 --- !u!196 &5
 NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
-    agentRadius: .5
+    agentTypeID: 0
+    agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: .400000006
+    agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
-    accuratePlacement: 0
     minRegionArea: 2
-    cellSize: .166666672
     manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &56946483
 Prefab:
@@ -444,12 +469,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 200414895}
-  - 222: {fileID: 200414897}
-  - 114: {fileID: 200414896}
-  - 114: {fileID: 200414898}
+  - component: {fileID: 200414895}
+  - component: {fileID: 200414897}
+  - component: {fileID: 200414896}
+  - component: {fileID: 200414898}
   m_Layer: 5
   m_Name: WinText
   m_TagString: Untagged
@@ -464,17 +489,18 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 200414894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -21}
+  m_LocalPosition: {x: -6.1401367, y: -9.896835, z: -21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1110452099}
   m_Father: {fileID: 1919128405}
   m_RootOrder: 2
-  m_AnchorMin: {x: .0941666663, y: .268369168}
-  m_AnchorMax: {x: .899437308, y: .710550666}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.094166666, y: 0.26836917}
+  m_AnchorMax: {x: 0.8994373, y: 0.71055067}
   m_AnchoredPosition: {x: 0, y: 1.5}
   m_SizeDelta: {x: -6, y: -2}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &200414896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,14 +514,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 163ffed20c86ab644979768dee2758ff, type: 3}
-    m_FontSize: 1
+    m_FontSize: 59
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 200
     m_Alignment: 1
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -572,10 +605,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 369692517}
-  - 82: {fileID: 369692518}
+  - component: {fileID: 369692517}
+  - component: {fileID: 369692518}
   m_Layer: 0
   m_Name: m3
   m_TagString: Untagged
@@ -595,6 +628,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1247452974}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &369692518
 AudioSource:
   m_ObjectHideFlags: 0
@@ -610,6 +644,8 @@ AudioSource:
   m_Pitch: 1
   Loop: 1
   Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
@@ -622,48 +658,57 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .00200000009
-      value: 1.00260043
-      inSlope: -.00403411081
-      outSlope: -.00403411081
+    - serializedVersion: 2
+      time: 0.002
+      value: 1.0026004
+      inSlope: -0.004034111
+      outSlope: -0.004034111
       tangentMode: 0
-    - time: 1
-      value: .998581707
-      inSlope: -.00260031223
-      outSlope: -.00260031223
+    - serializedVersion: 2
+      time: 1
+      value: 0.9985817
+      inSlope: -0.0026003122
+      outSlope: -0.0026003122
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &389209857
 Prefab:
   m_ObjectHideFlags: 0
@@ -903,11 +948,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 504594000}
-  - 222: {fileID: 504594002}
-  - 114: {fileID: 504594001}
+  - component: {fileID: 504594000}
+  - component: {fileID: 504594002}
+  - component: {fileID: 504594001}
   m_Layer: 5
   m_Name: title
   m_TagString: Untagged
@@ -922,16 +967,17 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 504593999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 389.7655, y: -2.0014725, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1608986868}
   m_RootOrder: 2
-  m_AnchorMin: {x: .411000013, y: .0577759705}
-  m_AnchorMax: {x: .994794369, y: .927776039}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.411, y: 0.05777597}
+  m_AnchorMax: {x: 0.99479437, y: 0.92777604}
   m_AnchoredPosition: {x: 0, y: -1}
   m_SizeDelta: {x: -3, y: -4}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &504594001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,6 +991,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 163ffed20c86ab644979768dee2758ff, type: 3}
     m_FontSize: 20
@@ -953,6 +1005,7 @@ MonoBehaviour:
     m_MinSize: 6
     m_MaxSize: 200
     m_Alignment: 0
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -1157,12 +1210,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 768986279}
-  - 222: {fileID: 768986281}
-  - 114: {fileID: 768986280}
-  - 114: {fileID: 768986282}
+  - component: {fileID: 768986279}
+  - component: {fileID: 768986281}
+  - component: {fileID: 768986280}
+  - component: {fileID: 768986282}
   m_Layer: 5
   m_Name: score
   m_TagString: Untagged
@@ -1177,16 +1230,17 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 768986278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: -560.8844, y: 28.034283, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1608986868}
   m_RootOrder: 0
-  m_AnchorMin: {x: .00468505966, y: .404444009}
-  m_AnchorMax: {x: .411000013, y: 1}
-  m_AnchoredPosition: {x: .350036621, y: 0}
-  m_SizeDelta: {x: 1.30004883, y: 1}
-  m_Pivot: {x: .5, y: .5}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.0046850597, y: 0.404444}
+  m_AnchorMax: {x: 0.411, y: 1}
+  m_AnchoredPosition: {x: 0.35003662, y: 0}
+  m_SizeDelta: {x: 1.3000488, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &768986280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,6 +1254,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 163ffed20c86ab644979768dee2758ff, type: 3}
     m_FontSize: 20
@@ -1208,6 +1268,7 @@ MonoBehaviour:
     m_MinSize: 6
     m_MaxSize: 80
     m_Alignment: 0
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -1374,10 +1435,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 853652850}
-  - 82: {fileID: 853652851}
+  - component: {fileID: 853652850}
+  - component: {fileID: 853652851}
   m_Layer: 0
   m_Name: m2
   m_TagString: Untagged
@@ -1397,6 +1458,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1247452974}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &853652851
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1412,6 +1474,8 @@ AudioSource:
   m_Pitch: 1
   Loop: 1
   Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
@@ -1424,48 +1488,57 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .00200000009
-      value: 1.00260043
-      inSlope: -.00403411081
-      outSlope: -.00403411081
+    - serializedVersion: 2
+      time: 0.002
+      value: 1.0026004
+      inSlope: -0.004034111
+      outSlope: -0.004034111
       tangentMode: 0
-    - time: 1
-      value: .998581707
-      inSlope: -.00260031223
-      outSlope: -.00260031223
+    - serializedVersion: 2
+      time: 1
+      value: 0.9985817
+      inSlope: -0.0026003122
+      outSlope: -0.0026003122
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &855727681
 Prefab:
   m_ObjectHideFlags: 0
@@ -1517,12 +1590,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 883701646}
-  - 222: {fileID: 883701648}
-  - 114: {fileID: 883701647}
-  - 114: {fileID: 883701649}
+  - component: {fileID: 883701646}
+  - component: {fileID: 883701648}
+  - component: {fileID: 883701647}
+  - component: {fileID: 883701649}
   m_Layer: 5
   m_Name: camerasRemain
   m_TagString: Untagged
@@ -1537,16 +1610,17 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 883701645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: -560.73444, y: -41.78533, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1608986868}
   m_RootOrder: 1
-  m_AnchorMin: {x: .00468505966, y: 0}
-  m_AnchorMax: {x: .411000013, y: .404444009}
-  m_AnchoredPosition: {x: .5, y: -.504001617}
-  m_SizeDelta: {x: 1, y: -1.00800323}
-  m_Pivot: {x: .5, y: .5}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.0046850597, y: 0}
+  m_AnchorMax: {x: 0.411, y: 0.404444}
+  m_AnchoredPosition: {x: 0.5, y: -0.5040016}
+  m_SizeDelta: {x: 1, y: -1.0080032}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883701647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1560,6 +1634,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 163ffed20c86ab644979768dee2758ff, type: 3}
     m_FontSize: 20
@@ -1568,6 +1648,7 @@ MonoBehaviour:
     m_MinSize: 6
     m_MaxSize: 80
     m_Alignment: 0
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -1642,12 +1723,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 891324508}
-  - 222: {fileID: 891324510}
-  - 114: {fileID: 891324509}
-  - 114: {fileID: 891324511}
+  - component: {fileID: 891324508}
+  - component: {fileID: 891324510}
+  - component: {fileID: 891324509}
+  - component: {fileID: 891324511}
   m_Layer: 5
   m_Name: LoseText
   m_TagString: Untagged
@@ -1662,16 +1743,17 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 891324507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -20}
+  m_LocalPosition: {x: -6.1401367, y: -9.896835, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1919128405}
   m_RootOrder: 1
-  m_AnchorMin: {x: .0941666663, y: .268369168}
-  m_AnchorMax: {x: .899437308, y: .710550666}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.094166666, y: 0.26836917}
+  m_AnchorMax: {x: 0.8994373, y: 0.71055067}
   m_AnchoredPosition: {x: 0, y: 1.5}
   m_SizeDelta: {x: -6, y: -2}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &891324509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1685,14 +1767,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 163ffed20c86ab644979768dee2758ff, type: 3}
-    m_FontSize: 1
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 200
     m_Alignment: 1
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -1767,10 +1856,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 975454276}
-  - 82: {fileID: 975454275}
+  - component: {fileID: 975454276}
+  - component: {fileID: 975454275}
   m_Layer: 0
   m_Name: m1
   m_TagString: Untagged
@@ -1793,6 +1882,8 @@ AudioSource:
   m_Pitch: 1
   Loop: 1
   Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
@@ -1805,48 +1896,57 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .00200000009
-      value: 1.00260043
-      inSlope: -.00403411081
-      outSlope: -.00403411081
+    - serializedVersion: 2
+      time: 0.002
+      value: 1.0026004
+      inSlope: -0.004034111
+      outSlope: -0.004034111
       tangentMode: 0
-    - time: 1
-      value: .998581707
-      inSlope: -.00260031223
-      outSlope: -.00260031223
+    - serializedVersion: 2
+      time: 1
+      value: 0.9985817
+      inSlope: -0.0026003122
+      outSlope: -0.0026003122
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &975454276
 Transform:
   m_ObjectHideFlags: 0
@@ -1859,6 +1959,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1247452974}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &976116296
 Prefab:
   m_ObjectHideFlags: 0
@@ -1960,11 +2061,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 1110452099}
-  - 222: {fileID: 1110452101}
-  - 114: {fileID: 1110452100}
+  - component: {fileID: 1110452099}
+  - component: {fileID: 1110452101}
+  - component: {fileID: 1110452100}
   m_Layer: 5
   m_Name: GradeText
   m_TagString: Untagged
@@ -1979,16 +2080,17 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1110452098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 21}
+  m_LocalPosition: {x: -0.00030517578, y: -384.1075, z: 21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 200414895}
   m_RootOrder: 0
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -.000289440155, y: -384.107513}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00028944016, y: -384.1075}
   m_SizeDelta: {x: 1540, y: 187}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1110452100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2002,6 +2104,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 163ffed20c86ab644979768dee2758ff, type: 3}
     m_FontSize: 14
@@ -2010,6 +2118,7 @@ MonoBehaviour:
     m_MinSize: 10
     m_MaxSize: 200
     m_Alignment: 1
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -2134,10 +2243,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1247452974}
-  - 114: {fileID: 1247452973}
+  - component: {fileID: 1247452974}
+  - component: {fileID: 1247452973}
   m_Layer: 0
   m_Name: MusicPlayer
   m_TagString: Untagged
@@ -2161,7 +2270,7 @@ MonoBehaviour:
   - {fileID: 853652851}
   - {fileID: 369692518}
   spottedMusic: {fileID: 1354442246}
-  volumeSpeed: .100000001
+  volumeSpeed: 0.1
   spottedSpeed: 1
   volumeMultiplier: 1.5
   finalScore: 0
@@ -2182,6 +2291,7 @@ Transform:
   - {fileID: 1354442245}
   m_Father: {fileID: 0}
   m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1279438734
 Prefab:
   m_ObjectHideFlags: 0
@@ -2233,10 +2343,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1354442245}
-  - 82: {fileID: 1354442246}
+  - component: {fileID: 1354442245}
+  - component: {fileID: 1354442246}
   m_Layer: 0
   m_Name: m4
   m_TagString: Untagged
@@ -2256,6 +2366,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1247452974}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1354442246
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2271,6 +2382,8 @@ AudioSource:
   m_Pitch: 1
   Loop: 1
   Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
@@ -2283,48 +2396,57 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .00200000009
-      value: 1.00260043
-      inSlope: -.00403411081
-      outSlope: -.00403411081
+    - serializedVersion: 2
+      time: 0.002
+      value: 1.0026004
+      inSlope: -0.004034111
+      outSlope: -0.004034111
       tangentMode: 0
-    - time: 1
-      value: .998581707
-      inSlope: -.00260031223
-      outSlope: -.00260031223
+    - serializedVersion: 2
+      time: 1
+      value: 0.9985817
+      inSlope: -0.0026003122
+      outSlope: -0.0026003122
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 2
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1355764938
 Prefab:
   m_ObjectHideFlags: 0
@@ -2472,11 +2594,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 1608986868}
-  - 222: {fileID: 1608986867}
-  - 114: {fileID: 1608986866}
+  - component: {fileID: 1608986868}
+  - component: {fileID: 1608986867}
+  - component: {fileID: 1608986866}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -2496,7 +2618,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .0514705777, g: .00189229939, b: .00189229939, a: 1}
+  m_Color: {r: 0.051470578, g: 0.0018922994, b: 0.0018922994, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2518,7 +2646,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1608986865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -20}
+  m_LocalPosition: {x: -0.000061035156, y: 470.82678, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 768986279}
@@ -2526,11 +2654,12 @@ RectTransform:
   - {fileID: 504594000}
   m_Father: {fileID: 1919128405}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: .871327937}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.87132794}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.05175781e-05, y: -.250030518}
-  m_SizeDelta: {x: 1, y: -.499940008}
-  m_Pivot: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -0.000030517578, y: -0.25003052}
+  m_SizeDelta: {x: 1, y: -0.49994}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1640751720
 Prefab:
   m_ObjectHideFlags: 0
@@ -2850,12 +2979,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1885663413}
-  - 114: {fileID: 1885663412}
-  - 114: {fileID: 1885663411}
-  - 114: {fileID: 1885663410}
+  - component: {fileID: 1885663413}
+  - component: {fileID: 1885663412}
+  - component: {fileID: 1885663411}
+  - component: {fileID: 1885663410}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2874,7 +3003,7 @@ MonoBehaviour:
   m_Script: {fileID: 1997211142, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowActivationOnStandalone: 0
+  m_ForceModuleActive: 0
 --- !u!114 &1885663411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2891,8 +3020,8 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
-  m_RepeatDelay: .5
-  m_AllowActivationOnMobileDevice: 0
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
 --- !u!114 &1885663412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2919,17 +3048,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1897583196
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1897583200}
-  - 33: {fileID: 1897583199}
-  - 64: {fileID: 1897583198}
-  - 23: {fileID: 1897583197}
+  - component: {fileID: 1897583200}
+  - component: {fileID: 1897583199}
+  - component: {fileID: 1897583198}
+  - component: {fileID: 1897583197}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -2946,20 +3076,30 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: aa00ec049d042d449b6098d7cfb60959, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!64 &1897583198
 MeshCollider:
@@ -2972,6 +3112,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1897583199
 MeshFilter:
@@ -2991,18 +3133,19 @@ Transform:
   m_LocalScale: {x: 200, y: 200, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1919128401
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 1919128405}
-  - 223: {fileID: 1919128404}
-  - 114: {fileID: 1919128403}
-  - 114: {fileID: 1919128402}
+  - component: {fileID: 1919128405}
+  - component: {fileID: 1919128404}
+  - component: {fileID: 1919128403}
+  - component: {fileID: 1919128402}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3054,7 +3197,7 @@ Canvas:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1919128401}
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -3062,8 +3205,11 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!224 &1919128405
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3071,14 +3217,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1919128401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 233.5, y: 131.5, z: 0}
+  m_LocalScale: {x: 0.24322918, y: 0.24322918, z: 0.24322918}
   m_Children:
   - {fileID: 1608986868}
   - {fileID: 891324508}
   - {fileID: 200414895}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
