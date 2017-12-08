@@ -15,7 +15,7 @@ public class VideoScore : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        filmBarSize = filmBar.transform.localScale;
+        filmBarSize = Vector3.one;
 	}
 	
 	// Update is called once per frame
@@ -38,6 +38,7 @@ public class VideoScore : MonoBehaviour {
 
     public void SetFilm(float f)
     {
+        Debug.Log(filmBarSize.x);
         filmBar.transform.localScale = new Vector3(filmBarSize.x * f, filmBarSize.y, filmBarSize.z);
     }
 }
